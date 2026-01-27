@@ -7,7 +7,7 @@ Pay the hourly rate for the hours up to 40 and 1.5 times the hourly rate for all
 hrs=input('Enter hours\n')
 rate=input('Enter rate\n')
 
-otPay=(float(hrs)-40)*float(rate)*1.5 + 40*float(hrs)
+otPay=(float(hrs)-40)*float(rate)*1.5 + (40*float(rate))
 regPay = float(hrs)*float(rate)
 
 if float(hrs)>40:
