@@ -23,5 +23,5 @@ elif float(score) >= 0.6:
 elif float(score) < 0.6:
 	print("F")
 else:
-	print("The score you entered is out of range...")
+	print("The score you entered is out of range!!!")
 	exit()
