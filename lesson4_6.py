@@ -7,19 +7,20 @@ Do not worry about error checking the user input unless you want to - you can as
 Do not name your variable sum or use the sum() function.'''
 
 
-def computePay():
-	regPay=float(hours) * float(rate)
-	overTimePay=(float(hours)-40)*float(rate)*1.5 + (40*float(rate))
-	if float(hours) > 40:
-		print("Over time pay...")
-		print("Pay:",overTimePay)
-	if float(hours) <= 40:
-		print("Regular pay...")
-		print("Pay:",regPay)
+def computePay(hours,rate):
+	if hours>40:
+		pay = (hours-40)*(rate*0.5)+ (hours * rate)
+	else:
+		pay = hours*rate
+	return pay
 	
-hours = input("En the hours of working:   ")
-rate = input("Enter the rate:   ")
-computePay()
+sh = input("Enter the hours: ")
+sr = input("Enter the rate: ")
+fh = float(sh)
+fr = float(sr)
+#p = computePay(fh,fr)
+#print("Pay: ", p)
+print("Pay: ",computePay(fh,fr))
 
 
 
