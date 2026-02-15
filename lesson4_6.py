@@ -12,6 +12,7 @@ def computePay(hours,rate):
 		pay = (hours-40)*(rate*0.5)+ (hours * rate)
 	else:
 		pay = hours*rate
+		
 	return pay
 	
 sh = input("Enter the hours: ")
